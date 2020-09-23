@@ -1,18 +1,15 @@
 <template>
-  <div id="app">
-    <Header/>
-    <router-view />
-  </div>
+  <ContainerConf/>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Header from "./components/Header.vue";
+import ContainerConf from "@/components/ContainerConf.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
-    Header
+      ContainerConf
   }
 });
 </script>

@@ -8,7 +8,8 @@
         <div class="columns is-desktop is-mobile is-table is-multiline is-centered">
           <div class="column is-full">{{ payflowRule.description }}</div>
           <div class="column is-full">
-            <button class="button is-rounded is-info is-small">Descargar reglas</button>
+            <button class="button is-rounded is-info is-small">Download rules</button>
+            <button class="button is-rounded is-info is-small">Upload Rules</button>
           </div>
         </div>
       </div>
@@ -16,8 +17,11 @@
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import Vue from "vue";
+
+export default Vue.extend({
+  name: "Header",
   props: ["payflowRule"]
-};
+});
 </script>

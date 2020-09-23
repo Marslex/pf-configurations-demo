@@ -7,8 +7,9 @@
   </div>
 </template>
 
-<script>
-import Configuration from "./Configuration";
+<script lang="ts">
+import Vue from "vue";
+import Configuration from "@/components/Configuration.vue";
 
 function responseCodeMapper() {
   return {
@@ -26,7 +27,8 @@ function antifraudImplementation() {
   };
 }
 
-export default {
+export default Vue.extend({
+  name: "ContainerConf",
   components: {
     Configuration
   },
@@ -36,5 +38,5 @@ export default {
         antifraudImplementation()
     ] };
   }
-};
+});
 </script>
