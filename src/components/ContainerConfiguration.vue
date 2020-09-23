@@ -28,7 +28,7 @@ function antifraudImplementation() {
 }
 
 export default Vue.extend({
-  name: "ContainerConf",
+  name: "ContainerConfiguration",
   components: {
     Configuration
   },

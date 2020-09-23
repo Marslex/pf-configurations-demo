@@ -1,15 +1,15 @@
 <template>
-  <ContainerConf/>
+  <ContainerConfiguration/>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import ContainerConf from "@/components/ContainerConf.vue";
+import ContainerConfiguration from "@/components/ContainerConfiguration.vue";
 
 export default Vue.extend({
   name: "Home",
   components: {
-      ContainerConf
+      ContainerConfiguration
   }
 });
 </script>
